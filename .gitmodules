@@ -1,3 +1,6 @@
 [submodule "Level-02/lib/forge-std"]
 	path = Level-02/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "Level-03/lib/forge-std"]
+	path = Level-03/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std

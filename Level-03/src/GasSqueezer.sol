@@ -15,11 +15,20 @@ contract GasSqueezer {
     uint64 public fourthNo = 200;
 
     // --- IMMUTABLE ---
+    // Immutable (Saved in bytecode, not storage)
     // Why is this cheap? Because it's not stored on a "shelf"!
     // It is hardcoded directly into the contract's bytecode.
+
     address public immutable VAULT_ADDRESS;
 
     constructor(address _vault) {
         VAULT_ADDRESS = _vault;
+    }
+
+    // Calldata (No copying, saves gas)
+    function readNames(
+        string[] calldata _names
+    ) public pure returns (string memory) {
+        return _names[0];
     }
 }

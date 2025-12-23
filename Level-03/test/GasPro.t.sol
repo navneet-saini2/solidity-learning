@@ -11,16 +11,25 @@ contract GasProTest is Test {
         gasPro = new GasPro();
     }
 
+    // 1. Existing Security Test
     function test_RevertWhen_CallerIsNotOwner() public {
         address notOwner = address(0x1234);
 
-        // 1. Pretend to be the hacker
         vm.prank(notOwner);
-
-        // 2. Tell Foundry to expect the "NotOwner" error
         vm.expectRevert(GasPro.NotOwner.selector);
 
-        // 3. Call the function that HAS the modifier
         gasPro.incrementCount();
+    }
+
+    // 2. Added Fuzz Test (Optimization & Math Safety)
+    function testFuzz_FastIncrement(uint256 randomX) public {
+        // We tell Foundry: "Ignore the absolute maximum value to prevent overflow"
+        vm.assume(randomX < type(uint256).max);
+
+        // Call the function from your src/GasPro.sol
+        uint256 result = gasPro.fastIncrement(randomX);
+
+        // Verify the math is correct across hundreds of random inputs
+        assertEq(result, randomX + 1);
     }
 }

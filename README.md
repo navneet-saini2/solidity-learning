@@ -4,7 +4,7 @@ A structured roadmap documenting my progression from Solidity fundamentals to ad
 
 ---
 
-## Level 1: Basics (Completed)
+## Level 1: Basics 
 
 - Core Solidity types: uint, address, bool
 - Data structures: mapping, struct
@@ -14,7 +14,7 @@ A structured roadmap documenting my progression from Solidity fundamentals to ad
 
 ---
 
-## Level 2: Professional Solidity (In Progress)
+## Level 2: Professional Solidity
 
 - Events and logging for frontend integration
 - Contract inheritance using `is`

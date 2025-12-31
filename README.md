@@ -46,7 +46,6 @@ A structured roadmap documenting my progression from Solidity fundamentals to ad
   - NFT marketplace or advanced minting system
   - DAO governance system
 - Open-source contributions
-- Hackathon participation (ETHGlobal)
 
 ---
 

@@ -2,7 +2,7 @@
 pragma solidity ^0.8.26;
 
 interface IERC20 {
-    // functions later
+// functions later
 }
 
 contract SimpleAMM {
@@ -21,7 +21,10 @@ contract SimpleAMM {
         tokenA = IERC20(_tokenA);
         tokenB = IERC20(_tokenB);
     }
+
     // addLiquidity
+    function addLiquidity(uint256 amount0, uint256 amount1) external returns (uint256 liquidity) {}
+
     // swap
     // removeLiquidity
 }

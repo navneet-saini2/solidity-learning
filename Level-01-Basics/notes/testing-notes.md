@@ -77,11 +77,11 @@ import "forge-std/Test.sol";
 ```
 Gives access to:
 
-assertEq
-assertTrue
-vm.prank
-vm.expectRevert
-fuzz helpers
+- assertEq
+- assertTrue
+- vm.prank
+- vm.expectRevert
+- fuzz helpers
 
 ```solidity
 contract MyTest is Test {}

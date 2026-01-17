@@ -185,8 +185,8 @@ Rule: Must hold no matter what.
 
 
 ### Golden Rules
-Every public function needs tests
-Always test failure cases
-Use fuzz tests for math logic
-Keep tests clean, notes in .md
-This is professional-level testing.
+- Every public function needs tests
+- Always test failure cases
+- Use fuzz tests for math logic
+- Keep tests clean, notes in .md
+- This is professional-level testing.
